@@ -3,13 +3,21 @@ body {
 	color: #ccc;
 	padding: 20px;
 	font-size: 1.5rem;
+	.App {
+		.title {
+			display: flex;
+			gap: 20px;
+			img {
+				width: 100px;
+			}
+		}
+		a {
+			color: #aaa;
+			text-decoration: none;
+		}
 
-	a {
-		color: #aaa;
-		text-decoration: none;
-	}
-
-	a.active {
-		color: yellow;
+		a.active {
+			color: yellow;
+		}
 	}
 }
