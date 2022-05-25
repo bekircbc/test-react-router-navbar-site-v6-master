@@ -7,7 +7,10 @@ import { NavLink, Routes, Route, Navigate } from 'react-router-dom';
 function App() {
 	return (
 		<div className="App">
-			<h1>Personal Site</h1>
+			<div className="title">
+				<img src="images/icon.png" alt="logo" />
+				<h1>Test React Router Navbar</h1>
+			</div>
 			<hr />
 			<NavLink to="/welcome">Welcome</NavLink> |{' '}
 			<NavLink to="/books">Books</NavLink> |{' '}
@@ -17,7 +20,7 @@ function App() {
 				<Route path="/welcome" element={<PageWelcome />} />
 				<Route path="/books" element={<PageBooks />} />
 				<Route path="/about" element={<PageAbout />} />
-				<Route path="/" element={<Navigate to="/welcome" replace />}/>
+				<Route path="/" element={<Navigate to="/welcome" replace />} />
 			</Routes>
 		</div>
 	);
